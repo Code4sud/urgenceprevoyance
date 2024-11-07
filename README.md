@@ -10,6 +10,7 @@ cd back
 npm install
 npm start
 ```
+
 2. Installer les dépendances et démarrer le serveur frontend
 ```bash
 cd front
