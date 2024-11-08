@@ -23,11 +23,11 @@ function Home() {
       <PageAccueil />
       <div style={{ marginTop : "40px",top: "10px", right: "10px", display:"flex", justifyContent:"space-around", alignItems:""}}>
         <button style={{width:"12em"}} onClick={() => scrollToRef(articlesRef)}>
-          Scroll to Articles
+          M'informer
         </button>
-        <button style={{width:"12em"}} onClick={() => scrollToRef(mapRef)}>Scroll to Map</button>
+        <button style={{width:"12em"}} onClick={() => scrollToRef(mapRef)}>Me localiser</button>
         <button style={{width:"12em"}} onClick={() => scrollToRef(partenairesRef)}>
-          Scroll to Partenaires
+          Me préparer
         </button>
       </div>
       <div ref={articlesRef}>

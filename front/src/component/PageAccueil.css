@@ -24,7 +24,7 @@
   font-size: 1em;
   border-radius: 15px;
   margin: 20px 0;
-  color: #000000; 
+  /* color: #000000;  */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -35,12 +35,12 @@
 .Sous-titre h3 {
   font-size: 1.8em;
   margin: 0; 
-  color: #000000; 
+  /* color: #000000;  */
 }
 
 .Sous-titre p {
   margin: 5px 0 0; 
-  color: #000000; 
+  /* color: #000000;  */
 }
 
 .Corps {
@@ -48,6 +48,7 @@ display: flex;
 justify-content: space-between;
 align-items: flex-start;
 padding: 20px;
+margin: 7rem 0;
 width: 100%; 
 }
 
@@ -83,7 +84,7 @@ width: 30%;
 .Corps p {
   font-size: 1.5em;
   text-align: center;
-  color: #000000;
+  /* color: #000000; */
   margin-bottom: 30px;
 }
 

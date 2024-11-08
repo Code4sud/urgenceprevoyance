@@ -1,291 +1,305 @@
 /* 1. Mise en page générale */
 .PagePartenaires {
-    font-family: Arial, sans-serif;
-    border-radius: 16px;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7; /* Gris clair pour le fond */
-  }
-  
-  /* 2. Header */
-  .header_partenaires {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #3e3e3e; /* Gris foncé */
-    color: white;
-    border-radius: 16px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7; /* Gris clair pour le fond */
+}
 
-  .cadre1 h3 {
-    font-size: 24px;
-  }
-  
-  .cadre2 h1 {
-    font-size: 36px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #d32f2f; /* Rouge clair */
-  }
-  
-  .zone_texte p {
-    text-align: center;
-    font-size: 16px;
-    color: #ddd; /* Gris clair */
-    padding: 10px;
-    width: 70%;
-    margin: 0 auto;
-  }
-  
-  /* 3. Corps de la page partenaires */
+/* 2. Header */
+.header_partenaires {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #3e3e3e; /* Gris foncé */
+  color: white;
+  border-radius: 15px;
+}
+
+.cadre1 h3 {
+  font-size: 24px;
+}
+
+.cadre2 h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #d32f2f; /* Rouge clair */
+}
+
+.zone_texte p {
+  text-align: center;
+  font-size: 16px;
+  color: #ddd; /* Gris clair */
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* 3. Corps de la page partenaires */
+.body_partenaires {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #fff;
+}
+
+.colones {
+  display: flex;
+  justify-content: space-between; /* Aligne les colonnes de gauche à droite */
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.col1, .col2, .col3 {
+  width: 30%; /* Chaque colonne occupe 30% de la largeur disponible */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fafafa; /* Gris très clair */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.titre {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  color: #777; /* Gris moyen */
+  margin-bottom: 20px;
+}
+
+.zone_num, .zone_radio, .zone_lien, .reseau, .assistance, .Utile, .Quizz, .Engagement {
+  margin-bottom: 20px;
+}
+
+.Utile, .Engagement{
+  margin-top: 30%;
+}
+.Quizz{
+  margin-top: 10%;
+}
+
+/*zone_num*/
+#num1 .img{
+background-image: url('../assets/sarah/pompier.png');
+}
+#num2 .img{
+background-image: url('../assets/sarah/policier.png');
+}
+#num3 .img{
+background-image: url('../assets/sarah/medecin.png');
+}
+#num4 .img{
+background-image: url('../assets/sarah/handicap.png');
+}
+#num5 .img{
+background-image: url('../assets/sarah/europe.png');
+}
+#t1{
+display: block;
+align-items: center;
+}
+#t1 .img{
+width: 25%;
+background-image: url('../assets/sarah/QRqueen.png');
+}
+
+
+/* 4. Cartes d'urgence et de communication */
+.zone_num, .zone_radio, .zone_lien, .reseau, .Utile, .Quizz, .Engagement{
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.zone_num .img{
+  position: relative;
+  top: 90%;
+  left: 40%;
+}
+
+.liens{
+  margin-top: 50%;
+}
+
+.radio .name{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/*****LIENS**/
+.reseaux{
+  margin-top: 30%;
+  width: 100%;
+}
+/*****/
+
+.name {
+  font-weight: bold;
+  color: #333;
+}
+
+.num {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e88e5; /* Bleu foncé */
+}
+
+.img {
+  background-color: #ccc;
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+  border-radius: 50%;
+}
+
+.desc {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.Corps, .body_partenaires p{
+  color: black;
+}
+
+.station {
+  font-weight: bold;
+}
+
+.qrCode {
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+/* 5. Assistance (boutons) */
+.btn {
+  background-color: #d32f2f; /* Rouge léger */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  width: 200px;
+  height: 100px;
+}
+
+.btn:hover {
+  background-color: #b71c1c; /* Rouge foncé au survol */
+}
+
+/* 6. Footer */
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* 7. Liens */
+.lien_docs, .lien_quizz {
+  display: block;
+  color: #1e88e5; /* Bleu foncé */
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.lien_docs:hover, .lien_quizz:hover {
+  text-decoration: underline;
+}
+
+.reseaux .texte {
+  font-weight: bold;
+  color: #1e88e5; /* Bleu foncé */
+}
+
+/* 8. Footer Bottom (Documents, Réseaux Sociaux, Quizz) */
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+
+
+.Utile p, .reseaux p, .Quizz p , .Engagement p{
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.reseaux .reseau, .Quizz .lien_quizz {
+  margin-bottom: 10px;
+}
+
+.ContactUs {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.ContactUs .btn {
+  background-color: #222; /* Gris foncé */
+  color: white;
+  padding: 12px 30px;
+}
+
+/* 9. Media Queries */
+@media screen and (max-width: 1200px) {
   .body_partenaires {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: #fff;
-    border-radius: 16px;
+    padding: 20px 5%;
   }
   
   .colones {
-    display: flex;
-    justify-content: space-between; /* Aligne les colonnes de gauche à droite */
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 40px;
-    border-radius: 16px;
-  }
-  
-  .col1, .col2, .col3 {
-    width: 30%; /* Chaque colonne occupe 30% de la largeur disponible */
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #fafafa; /* Gris très clair */
-    border-radius: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .titre {
-    font-size: 22px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .description {
-    font-size: 16px;
-    color: #777; /* Gris moyen */
-    margin-bottom: 20px;
-  }
-  
-  .zone_num, .zone_radio, .zone_lien, .reseau, .assistance {
-    margin-bottom: 20px;
-    border-radius: 16px;
-  }
-  
-  /* 4. Cartes d'urgence et de communication */
-  .zone_num, .zone_radio, .zone_lien, .reseau {
-    background-color: #f5f5f5;
-    padding: 15px;
-    border-radius: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  /*zone_lien*/
-  /* 3. Style spécifique pour la section "Réseaux Sociaux" */
-  .reseaux .reseau {
-    display: flex;
-    align-items: center;
-    background-color: #fafafa;
-    padding: 10px;
-    border-radius: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  .col1, .col2, .col3 {
+    width: 100%; /* Les colonnes prennent 100% de la largeur sur les petits écrans */
+    margin-bottom: 20px;
   }
-  
-  .reseaux .reseau .logo {
-    width: 40px;
-    height: 40px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .reseaux .reseau .texte {
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .reseaux .reseau:hover {
-    background-color: #e0e0e0;
-  }
-  /***/
-  
-  .name {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .num {
-    font-size: 20px;
-    font-weight: bold;
-    color: #1e88e5; /* Bleu foncé */
-  }
-  
-  .img {
-    background-color: #ccc;
-    width: 50px;
-    height: 50px;
-    margin: 10px 0;
-    border-radius: 50%;
-  }
-  
-  .desc {
-    font-size: 14px;
-    color: rgb(22, 21, 21);
-    margin-top: 10px;
-  }
-  
-  .station {
-    font-weight: bold;
-  }
-  
-  .qrCode {
-    width: 60px;
-    height: 60px;
-    background-color: #ccc;
-    margin: 10px 0;
-    border-radius: 16px;
-  }
-  
-  /* 5. Assistance (boutons) */
-  .btn {
-    background-color: #d32f2f; /* Rouge léger */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 16px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    width: 200px;
-  }
-  
-  .btn:hover {
-    background-color: #b71c1c; /* Rouge foncé au survol */
-    color: white; /* Texte des liens en blanc */
-  }
-  
-  /* 6. Footer */
-  .footer {
-    background-color: #222;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    border-radius: 16px;
-  }
-  
-  /* 7. Liens */
-  .lien_docs, .lien_quizz {
-    display: block;
-    color: #1e88e5; /* Bleu foncé */
-    text-decoration: none;
-    margin-bottom: 10px;
-    border-radius: 16px;
-  }
-  
-  .lien_docs:hover, .lien_quizz:hover {
-    text-decoration: underline;
-  }
-  
-  .reseaux .texte {
-    font-weight: bold;
-    color: #1e88e5; /* Bleu foncé */
-  }
-  
-  /* 8. Footer Bottom (Documents, Réseaux Sociaux, Quizz) */
+
   .bottom {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f1f1f1;
-    width: 100%;
-    border-radius: 16px;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .Utile, .reseaux, .Quizz {
-    width: 30%;
-    border-radius: 16px;
+    width: 100%;
+    margin-bottom: 30%;
+    margin-top: 30%;
   }
-  
-  .Utile p, .reseaux p, .Quizz p {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .col1, .col2, .col3 {
+    width: 100%; /* Les colonnes prennent 100% de la largeur sur les petits écrans */
   }
-  
-  .reseaux .reseau, .Quizz .lien_quizz {
-    margin-bottom: 10px;
-    border-radius: 16px;
+
+  .bottom {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .ContactUs {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border-radius: 16px;
+
+  .Utile, .reseaux, .Quizz {
+    width: 100%;
+    margin-bottom: 20px;
   }
-  
-  .ContactUs .btn {
-    background-color: #222; /* Gris foncé */
-    color: white;
-    padding: 12px 30px;
-    border-radius: 16px;
-  }
-  
-  /* 9. Media Queries */
-  @media screen and (max-width: 1200px) {
-    .body_partenaires {
-      padding: 20px 5%;
-    }
-    
-    .colones {
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 40px;
-    }
-  
-    .col1, .col2, .col3 {
-      width: 100%; /* Les colonnes prennent 100% de la largeur sur les petits écrans */
-      margin-bottom: 20px;
-    }
-  
-    .bottom {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .Utile, .reseaux, .Quizz {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .col1, .col2, .col3 {
-      width: 100%; /* Les colonnes prennent 100% de la largeur sur les petits écrans */
-    }
-  
-    .bottom {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .Utile, .reseaux, .Quizz {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  }
-  
+}

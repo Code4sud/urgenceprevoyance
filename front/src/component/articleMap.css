@@ -33,6 +33,10 @@
   margin-top: 100px;
 }
 
+.articleMap-title{
+  color: #888;
+}
+
 .container-article-map {
   display: flex;
   justify-content: center;

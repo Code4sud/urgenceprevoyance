@@ -68,8 +68,8 @@
     border-radius: 15px;
 }
 
-.Paragraphe p {
-    font-size: 1.5em;
+.Paragraphe h1 {
+    font-size: 3em;
     text-align: center;
     color: #8f8f8f;
     margin-bottom: 30px;
@@ -79,6 +79,8 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: fit-content;
+    gap: 10%;
     gap: 5%;
     justify-content: center;
     margin-bottom: 40px;
@@ -127,24 +129,47 @@
 .Inondation, .Incendies, .Seisme {
     margin-bottom: 20px;
     padding: 15px;
-    border-left: 4px solid #FFD700; /* Une couleur de séparation dorée */
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
 }
 
-h2 {
+.Inondation {
+    border-left: 4px solid #FFD700; 
+}
+
+.Incendies {
+    border-left: 4px solid #272727;
+}
+
+.Seisme {
+    border-left: 4px solid #478319; 
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.Inondation h2 {
     color: #FFD700;
+}
+
+.Incendies h2 {
+    color: #ffffff;
+}
+
+.Seisme h2 {
+    border-left: 4px solid #478319; 
+    color: #478319;
+}
+
+h2 {
     font-size: 1.5em;
     margin-top: 10px;
 }
 
 p, ul {
-    color: #FFFFFF;
     font-size: 1em;
 }
 
 strong {
-    color: #FFD700; /* Améliore la visibilité des parties en gras */
+    color: #FFD700; 
 }
 
 .Incendie ul {

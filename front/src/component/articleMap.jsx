@@ -218,7 +218,7 @@ const ArticleMap = () => {
   return (
     <>
     <div className="containertitle">
-        <h1>Cherchez votre localisation</h1>
+        <h1 className="articleMap-title">Cherchez votre localisation</h1>
         <div className="containerborder">
           <div className="border"></div>
         </div>
