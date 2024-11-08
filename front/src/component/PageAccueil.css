@@ -1,91 +1,170 @@
 .Titre {
-    font-size: 45px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-.Corps {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    width: 100%; 
-}
-  
-
- .tremblements {
-    font-size: 1.2rem;
-    margin-top: 80px;
-    /* font-weight:lighter; */
-    width: 30%; 
-
-  }
-  
-.inondable {
-    text-align: center; 
-    font-size: 1.2rem;
-    /* font-weight:lighter; */
-    width: 30%; 
-  }
-  
-
- .mouvement_de_terrain {
-    /* font-weight:lighter; */
-    font-size: 1.2rem;
-    margin-top: 80px; 
-    width: 30%; 
-  }
-  
-.Corps p:first-child {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-
-.Corps p {
-    font-size: 1.5em;
-    text-align: center;
-    color: #0a0909;
-    margin-bottom: 30px;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #ffffff; 
+  color: #000000; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.Titre h3 {
-	font-size: 32px;
+.Titre img {
+  width: 250px; 
+  height: auto; 
+  max-width: 100%;
+}
+
+.Sous-titre {
+  background: linear-gradient(135deg, #30475E, #6C63FF);
+  padding: 20px; 
+  text-align: center; 
+  font-size: 1em;
+  border-radius: 15px;
+  margin: 20px 0;
+  color: #000000; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .Sous-titre p {
-	font-size: 16px;
-	color: #0a0909;
+  text-decoration: underline;
 }
 
-/* Style pour le bas de page */
+.Sous-titre h3 {
+  font-size: 1.8em;
+  margin: 0; 
+  color: #000000; 
+}
+
+.Sous-titre p {
+  margin: 5px 0 0; 
+  color: #000000; 
+}
+
+.Corps {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+padding: 20px;
+width: 100%; 
+}
+
+.Corps div {
+background-color: #f9f9f9; 
+border: 1px solid #ddd; 
+padding: 20px; 
+border-radius: 8px; 
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+width: 30%; 
+}
+
+.tremblements {
+  margin-top: 60px;
+  width: 30%;
+}
+
+.inondable {
+  text-align: center; 
+  width: 30%;
+}
+
+.mouvement_de_terrain {
+  margin-top: 80px; 
+  width: 30%;
+}
+
+.Corps p:first-child {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.Corps p {
+  font-size: 1.5em;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+/* .Bas-Page {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 20px; 
+  border: 2px solid black; 
+  width: 100%; 
+  margin-top: 30px; 
+}
+
+.Bas-Page p {
+  color: black; 
+  font-size: 1.2rem; 
+  width: 70%; 
+}
+
+.Bas-Page button {
+  padding: 10px 20px; 
+  background-color: #4CAF50; 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+  font-size: 1.2rem; 
+}
+
+.Bas-Page button:hover {
+  background-color: #45a049; 
+} */
+
 .Bas-Page {
-    display: flex; /* Utilisation de flexbox pour aligner le contenu */
-    justify-content: space-between; /* Espacement entre le texte et le bouton */
-    align-items: center; /* Aligner verticalement le contenu */
-    padding: 10px 20px; /* Ajouter un peu de padding pour aérer le contenu */
-    border: 2px solid black; /* Bordure noire autour du bas de page */
-    width: 100%; /* Prendre toute la largeur disponible */
-    margin-top: 30px; /* Ajouter un espace en haut pour séparer du contenu précédent */
-  }
-  
-  .Bas-Page p {
-    color: black; /* Couleur du texte noir */
-    font-size: 1.2rem; /* Taille du texte */
-    width: 70%; /* Le texte prend environ 70% de la largeur */
-  }
-  
-  .Bas-Page button {
-    padding: 10px 20px; /* Un peu de padding autour du bouton */
-    background-color: #4CAF50; /* Couleur de fond du bouton */
-    color: white; /* Couleur du texte du bouton */
-    border: none; /* Pas de bordure par défaut */
-    cursor: pointer; /* Changer le curseur lorsque l'on passe dessus */
-    font-size: 1.2rem; /* Taille du texte du bouton */
-  }
-  
-  .Bas-Page button:hover {
-    background-color: #45a049; /* Changer la couleur de fond du bouton au survol */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 30px 0;
+  background: linear-gradient(135deg, #30475E, #6C63FF);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Bas-Page p {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background-color: #FF5722;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.4);
+}
+
+.cta-button:hover {
+  background-color: #E64A19;
+}
+
+.cta-button:active {
+  background-color: #D84315;
+}
+
+.cta-button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 87, 34, 0.6);
+}
+
+.highlight {
+  background-color: #ffeb3b; 
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 3px;
+}

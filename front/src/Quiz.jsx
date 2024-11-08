@@ -7,6 +7,14 @@ import risk5 from "./assets/risk5.jpeg";
 import risk6 from "./assets/risk6.jpeg";
 import risk7 from "./assets/risk7.jpeg";
 import risk8 from "./assets/risk8.jpeg";
+import risk9 from "./assets/risk9.jpeg";
+import risk10 from "./assets/risk10.jpeg";
+import risk11 from "./assets/risk11.jpeg";
+import risk12 from "./assets/risk12.jpeg";
+import risk13 from "./assets/risk13.jpeg";
+import risk14 from "./assets/risk14.jpeg";
+import risk15 from "./assets/risk15.jpeg";
+import risk16 from "./assets/risk16.jpeg";
 import "./Quiz.css";
 
 function Quiz() {
@@ -32,7 +40,7 @@ function Quiz() {
         imageUrl: risk3,
         isRisk: true,
         preventionMessage:
-          "Un risque est présent sur cette image : risque d'innondation.",
+          "Un risque est présent sur cette image : risque d'inondation.",
       },
       {
         imageUrl: risk4,
@@ -47,7 +55,7 @@ function Quiz() {
       {
         imageUrl: risk6,
         isRisk: true,
-        preventionMessage: "Cette image présente une innondation.",
+        preventionMessage: "Cette image présente une inondation.",
       },
       {
         imageUrl: risk7,
@@ -57,11 +65,52 @@ function Quiz() {
       {
         imageUrl: risk8,
         isRisk: true,
-        preventionMessage: "Cette image présente une innondation.",
+        preventionMessage: "Cette image présente une inondation.",
+      },
+      {
+        imageUrl: risk9,
+        isRisk: false,
+        preventionMessage: "Aucun risque n'est présent sur cette image.",
+      },
+      {
+        imageUrl: risk10,
+        isRisk: false,
+        preventionMessage: "Aucun risque n'est présent sur cette image.",
+      },
+      {
+        imageUrl: risk11,
+        isRisk: true,
+        preventionMessage:
+          "Un risque est présent sur cette image : risque d'éboulement.",
+      },
+      {
+        imageUrl: risk12,
+        isRisk: true,
+        preventionMessage: "Cette image représente un départ d'incendie.",
+      },
+      {
+        imageUrl: risk13,
+        isRisk: true,
+        preventionMessage: "Cette image représente une image innondée.",
+      },
+      {
+        imageUrl: risk14,
+        isRisk: true,
+        preventionMessage: "Cette image présente un éboulement.",
+      },
+      {
+        imageUrl: risk15,
+        isRisk: false,
+        preventionMessage: "Aucun risque n'est présent sur cette image.",
+      },
+      {
+        imageUrl: risk16,
+        isRisk: true,
+        preventionMessage: "Cette image présente un orage violent.",
       },
     ];
 
-    setQuestions(shuffleArray(initialQuestions));
+    setQuestions(shuffleArray(initialQuestions).slice(0, 8));
   }, []);
 
   const shuffleArray = (array) => {

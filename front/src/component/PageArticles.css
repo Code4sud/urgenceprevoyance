@@ -1,6 +1,7 @@
 .Page_Articles {
     width: 100%;
     height: fit-content;
+    margin-top: 3%;
     padding: 20px 80px;
     font-family: 'Montserrat', sans-serif;
     border-radius: 15px;
@@ -28,7 +29,7 @@
   
   .toggleButton:hover {
     opacity: 1;
-    background-color: #F05454;
+    background-color: #555555;
   }
   
   .support_text {
@@ -156,3 +157,5 @@ strong {
     text-decoration: none;
     margin-bottom: 8px;
 }
+
+

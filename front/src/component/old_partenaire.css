@@ -3,24 +3,28 @@
 
 
 .PagePartenaires{
-    border: solid red 2px;
     height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*//////////// HEADER /////////*/
 .header_partenaires{
-    border: solid 1px black;
     height: 110px;
     padding : 10px;
     padding-bottom: 0px;
     font-family: 'Montserrat';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .cadre1{
     background-color: rgb(158, 53, 53);
-    justify-content: center; 
     height: 50px;
     width: 180px;
     padding: 10px;
+    border-radius: 16px;
 }
 .cadre1 h3{
     color: white;
@@ -29,11 +33,6 @@
 .cadre2 {
     width: 400px;
     height: 50px;
-    position : relative;
-    bottom : 50px;
-    left : 450px;
-    justify-content: center;
-    padding: 0px;
 }
 .cadre2 h1{
     font-weight: bolder;
@@ -43,33 +42,31 @@
     color: white;
     width: 800px;
     height: 30px;
-    margin-top: 5px;
-    position: relative;
-    bottom: 40px;
-    left: 210px;
+    border-radius: 15px;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 /*/////////////////////*/
 
 /*/////////////////////*/
 
 .colones {
-    flex-wrap: wrap;
-    color: #b25c5c;
-    padding:10px 0px 10px 0px;
-    border: 2px solid black;
     display: flex;
-    flex-direction: row; /* Affichage en ligne (colonnes à l'horizontale) */
-    justify-content: space-around; /* Espace uniforme entre les colonnes */
+    flex-direction: row;
+    justify-content: space-around;
     height: 550px;
+    padding: 10px;
 }
 .col1, .col2, .col3{
     border: solid black 2px;
-    margin: 1px;
-    height: 500px auto;
+    margin: 10px;
+    height: 500px;
     width: 300px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    place-items: center;
+    justify-content: space-between;
 }
 /*/////////////////////*/
 
@@ -87,29 +84,30 @@
     background-color: lightgray;
     margin-bottom: 15px;
     text-align: center;
+    display: flex;
     justify-content: center;
-    align-items: center; /* Centre verticalement */
+    align-items: center;
 }
 .zone_num{
-    display: flex;               /* Active Flexbox */
-    flex-direction: row;         /* Aligne les éléments sur une ligne */
-    flex-wrap: wrap;             /* Permet aux éléments de se réorganiser si l'espace est insuffisant */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .name {
     color: black;
-    text-align: left;            /* Aligne le texte à gauche */
-    width: 100px;                /* Définit une largeur pour le nom */
+    text-align: left;
+    width: 100px;
     border: solid pink 2px;
-    padding: 5px;                /* Ajoute de l'espace intérieur */
+    padding: 5px;
 }
 
 .num {
     color: black;
-    width: 35px;                 /* Définit une largeur pour le numéro */
+    width: 35px;
     border: solid black 2px;
-    padding: 5px;                /* Ajoute de l'espace intérieur */
-    margin-left: 10px;           /* Espace entre le nom et le numéro */
+    padding: 5px;
+    margin-left: 10px;
 }
 .zone_num .img{
     border: solid 2px rgb(0, 51, 255);
@@ -122,10 +120,10 @@
 /*/////////////////////*/
 
 .bottom{
-    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 10px;
 }
 
 .Utile{
@@ -133,18 +131,27 @@
     margin: 20px;
     width: 250px;
     height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Quizz{
     border: solid black 2px;
     margin: 20px;
     width: 250px;
     height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .reseaux{
     border: solid black 2px;
     margin: 20px;
     width: 250px;
     height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*/////////////////////*/
 
@@ -152,4 +159,8 @@
     border: solid black 2px;
     padding: 0px;
     width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+

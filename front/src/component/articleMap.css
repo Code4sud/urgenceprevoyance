@@ -1,76 +1,180 @@
-/* Pour le titre de la map*/
-.article-map-title {
-  margin-top: 100px;
-
+/* Style pour le titre de la map */
+.containerborder {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
+.containerborder .border {
+  width: 50%;
+  border-bottom: 3px solid #F05454;
+  position: relative;
+}
 
+.containerborder .border::before,
+.containerborder .border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: none;
+  box-sizing: border-box;
+}
 
+.containertitle {
+  padding-top: 100px;
+}
+
+.article-map-title {
+  margin-top: 100px;
+}
+
+.container-article-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.article-map {
+  width: 60vw;
+  height: 60vh;
+}
+
+.input-address-article-map {
+  width: 31%;
+  border-radius: 15px;
+  padding:10px;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.input-city-article-map {
+  border-radius: 15px;
+  margin-right: 30px;
+  margin-left: 30px;
+  width: 31%;
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.input-postal-code-article-map{
+  border-radius: 15px;
+  width: 31%;
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.button-article-map{
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
 /* Conteneur pour toutes les checklists */
 .checklist-container {
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-between; /* Répartit les checklists horizontalement */
-    gap: 20px; /* Espacement entre les checklists */
-    flex-wrap: wrap; /* Permet aux checklists de se réorganiser en cas d'espace insuffisant */
-    text-align: left;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between; /* Répartit les checklists horizontalement */
+  gap: 20px; /* Espacement entre les checklists */
+  flex-wrap: wrap; /* Permet aux checklists de se réorganiser en cas d'espace insuffisant */
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Cache les éléments qui dépassent de la marge */
+}
+
+.container-article-map {
+  margin-top: 5%;
+}
+
+/* Style pour le titre de chaque checklist */
+.namechecklist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white; /* Bordure blanche de 2px */
+  padding: 10px; /* Espacement intérieur de 10px */
+  border-radius: 15px; /* Coins arrondis */
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  margin-bottom: 20px; /* Marge inférieure */
+}
+
+/* Style de base pour chaque checklist */
+.checklist {
+  flex: 1;
+  min-width: 200px; /* Taille minimum d'une checklist */
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px; /* Marge pour chaque checklist */
+}
+
+/* Liste des éléments dans chaque checklist */
+.checklist ul {
+  list-style-type: none; /* Retire les puces */
+  padding: 0;
+}
+
+.checklist li {
+  margin-bottom: 10px;
+  color: #555; /* Couleur du texte */
+}
+
+/* Style des titres des checklists */
+.checklist-container h3 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #333; /* Couleur du titre */
+}
+
+/* Style des cases à cocher */
+.checklist input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Agrandit le texte des labels des cases à cocher */
+.checklist label {
+  font-size: 1.2rem; /* Taille du texte des labels */
+  line-height: 1.5; /* Améliore la lisibilité */
+}
+
+/* Mise en page pour écrans de petite taille (responsive) */
+@media (max-width: 768px) {
+
+  .article-map {
+    width: 150vw;
+    height: 60vh;
+  }  
+
+  .input-address-article-map {
     width: 100%;
-    max-width: 100%;
-    overflow-x: hidden; /* Cache les éléments qui dépassent de la marge */
-  }
-    .namechecklist {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid white; /* Bordure blanche de 2px */
-    padding: 10px; /* Espacement intérieur de 10px */
-    border-radius: 15px; /* Coins arrondis de 5px */
-    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
-    margin-bottom: 20px; /* Marge inférieure de 10px */
   }
   
-  /* Style pour chaque checklist */
+  .input-city-article-map {
+    width: 35%;
+  }
+  
+  .input-postal-code-article-map{
+    width: 35%;
+  }
+
+  .checklist-container {
+    flex-direction: column; /* Empile les checklists verticalement */
+    gap: 15px;
+  }
+
+  .container-article-map {
+    margin-top: 10%;
+  }
+
   .checklist {
-    flex: 1;
-    min-width: 200px; /* Taille minimum d'une checklist */
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px; /* Marge pour chaque checklist */
+    min-width: 100%; /* Chaque checklist prend toute la largeur */
   }
-  
-  /* Liste des checklists */
-  .checklist ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .checklist li {
-    margin-bottom: 10px;
-    color: #555;
-  }
-  
-  .checklist-container h3 {
-    margin-bottom: 20px;
-    font-size: 1.2rem;
-    color: #333;
-  }
-  
-  /* Style des cases à cocher */
-  .checklist input[type="checkbox"] {
-    margin-right: 10px;
-  }
-  
-  /* Ajustement pour petits écrans (responsive) */
-  @media (max-width: 768px) {
-    .checklist-container {
-      flex-direction: column; /* Si l'espace est limité, empile les checklists verticalement */
-      gap: 15px;
-    }
-  
-    .checklist {
-      min-width: 100%; /* Prend toute la largeur possible */
-    }
-  }
-  
+}

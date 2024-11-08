@@ -217,70 +217,50 @@ const ArticleMap = () => {
 
   return (
     <>
-    <h1 style={{paddingTop: "100px"}}>Cherchez votre localisation</h1>
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "70vh",
-      }}
-    >
-      <div style={{ width: "60vw", height: "60vh" }}>
+    <div className="containertitle">
+        <h1>Cherchez votre localisation</h1>
+        <div className="containerborder">
+          <div className="border"></div>
+        </div>
+    </div>
+
+
+
+
+    <div className="container-article-map">
+      <div className="article-map">
         <div style={{ margin: "20px" }}>
           <input
+            className="input-address-article-map"
             type="text"
             value={address}
             onChange={handleAddressChange}
             placeholder="Entrez votre adresse"
-            style={{
-              width: "31%",
-              borderRadius: "15px",
-              padding: "10px",
-              fontSize: "1em",
-              marginBottom: "10px",
-            }}
           />
           <input
             type="text"
             value={city}
             onChange={handleCityChange}
             placeholder="Entrez votre ville"
-            style={{
-              borderRadius: "15px",
-              marginRight: "30px",
-              marginLeft: "30px",
-              width: "31%",
-              padding: "10px",
-              fontSize: "1em",
-              marginBottom: "10px",
-            }}
+            className="input-city-article-map"
           />
           <input
             type="text"
             value={postalCode}
             onChange={handlePostalCodeChange}
             placeholder="Entrez votre code postal"
-            style={{
-              borderRadius: "15px",
-              width: "31%",
-              padding: "10px",
-              fontSize: "1em",
-              marginBottom: "20px",
-            }}  
+            className="input-postal-code-article-map"
           />
           <button
             onClick={getCoordinates}
-            style={{ padding: "10px 20px", fontSize: "1em", cursor: "pointer" }}
+            className="button-article-map"
           >
             Obtenir les coordonnées
           </button>
           <button
             onClick={handleGeolocation}
+            className="button-article-map"
             style={{ 
-              padding: "10px 20px", 
-              fontSize: "1em", 
-              cursor: "pointer", 
               marginLeft: "10px",
               marginRight: "auto",
             }}
@@ -332,80 +312,95 @@ const ArticleMap = () => {
         </div> */}
       </div>
     </div>
-    <div className="container-article-map test-padding-top">
+    <div className="container-article-map">
           <div className="container-info-card">
-            <h2>{statusInfo.title}</h2>
-            <p>{statusInfo.details}</p>
+            {/* <h2>{statusInfo.title}</h2>
+            <p>{statusInfo.details}</p> */}
           </div>
 
         {/* Checklist de risques */}
         <div className="checklist-container">
-          {innondationStatus && (
-            <div className="checklist">
-              <h3 className= "namechecklist">Checklist Inondation</h3>
-              <ul>
-                <li>
-                  <label>
-                    <input type="checkbox" /> Assurez-vous que votre logement est à l'abri des inondations.
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" /> Préparez un kit d'urgence incluant des vivres, de l'eau et des médicaments.
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" /> Évacuez les zones basses en cas de montée des eaux.
-                  </label>
-                </li>
-              </ul>
-            </div>
-          )}
-          {fireStatus && (
-            <div className="checklist">
-              <h3 className="namechecklist">Checklist Incendie</h3>
-              <ul>
-                <li>
-                  <label>
-                    <input type="checkbox" /> Évitez les zones à risque d'incendie.
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" /> Assurez-vous que vos foyers et appareils électriques sont sécurisés.
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" /> Gardez une trousse d'urgence avec des masques et de l'eau.
-                  </label>
-                </li>
-              </ul>
-            </div>
-          )}
-          {seismeStatus && (
-            <div className="checklist">
-              <h3 className="namechecklist" >Checklist Séisme</h3>
-              <ul>
-                <li>
-                  <label>
-                    <input type="checkbox" /> Installez des dispositifs de sécurité pour limiter les risques de blessures pendant un tremblement de terre.
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" /> Identifiez les zones sûres de votre habitation.
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" /> Préparez un kit de survie avec des lampes de poche et de l'eau potable.
-                  </label>
-                </li>
-              </ul>
-            </div>
-          )}
+        {innondationStatus && (
+        <div className="checklist">
+            <h3 className="namechecklist">Checklist Inondation</h3>
+            <ul>
+            <li>
+                <label>
+                <input type="checkbox" /> Kit d'urgence avec eau, vivres, médicaments et lampe de poche.
+                </label>
+            </li>
+            <li>
+                <label>
+                <input type="checkbox" /> Surveillez les alertes météo et suivez les consignes des autorités.
+                </label>
+            </li>
+            <li>
+                <label>
+                <input type="checkbox" /> Connaître les itinéraires d'évacuation.
+                </label>
+            </li>
+            <li>
+                <label>
+                <input type="checkbox" /> Avoir un plan d'évacuation pour les zones à risque.
+                </label>
+            </li>
+            </ul>
+        </div>
+        )}
+        {fireStatus && (
+        <div className="checklist">
+            <h3 className="namechecklist">Checklist Incendie</h3>
+            <ul>
+            <li>
+                <label>
+                <input type="checkbox" /> Trousse d'urgence avec de l'eau, des masques et des objets essentiels.
+                </label>
+            </li>
+            <li>
+                <label>
+                <input type="checkbox" /> Détecteur de fumée fonctionnel.
+                </label>
+            </li>
+            <li>
+                <label>
+                <input type="checkbox" /> Un extincteur accessible et fonctionnel.
+                </label>
+            </li>
+            <li>
+                <label>
+                <input type="checkbox" /> Connaître les itinéraires d'évacuation et avoir un point de rassemblement.
+                </label>
+            </li>
+            </ul>
+        </div>
+        )}
+        {seismeStatus && (
+        <div className="checklist">
+            <h3 className="namechecklist">Checklist Séisme</h3>
+            <ul>
+            <li>
+                <label>
+                <input type="checkbox" /> Identifier des zones sûres à l'intérieur de la maison.
+                </label>
+            </li>
+            <li>
+                <label>
+                <input type="checkbox" /> Kit de survie avec des lampes de poche, de l'eau potable et des vivres.
+                </label>
+            </li>
+            <li>
+                <label>
+                <input type="checkbox" /> Revoir les consignes à suivre après un séisme (éviter les routes, vérifier les dégâts).
+                </label>
+            </li>
+            <li>
+                <label>
+                <input type="checkbox" /> Prévoir un moyen de communication d'urgence.
+                </label>
+            </li>
+            </ul>
+        </div>
+        )}
         </div>
       </div>
     </>
